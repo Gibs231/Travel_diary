@@ -1,6 +1,8 @@
 // @ts-nocheck
 import express from "express";
 import upload from "../middleware/upload";
+import TravelController from "../controller/travel_controller";
+
 
 const router = express.Router();
 
