@@ -32,10 +32,6 @@
         type: DataTypes.STRING,
         allowNull: true
     },
-    travelDate: {
-        type: DataTypes.DATEONLY,
-        allowNull: false // atau true, tergantung apakah wajib diisi
-    },
     imageUrl: {
         type: DataTypes.STRING,
         allowNull: true // jika ada gambar, bisa ditambahkan di sini
