@@ -49,20 +49,11 @@ const TravelController = {
   },
 store: async (req: Request, res: Response) => {
   try {
-    if (!req.file) {
-      return res.status(400).json({
-        status: 400,
-        message: "Image file is required."
-      })
-    }
-
-    // "https://balblaba.com/public/images/aslfjskdfjka.jpg"
-    const baseUrl = `${req.protocol}://${req.get("host")}`;
-    const imageUrl = `${baseUrl}/public/images/${req.file.filename}`;
+   
 
     const todo = await Travel.create({
       ...req.body,
-      imageUrl: imageUrl,
+      imageUrl: "",
     })
 
     return res.status(200).json({
