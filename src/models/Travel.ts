@@ -8,8 +8,6 @@
     public completed!: boolean;
     public description?: string;
     public imageUrl?: string; // jika ada gambar, bisa ditambahkan di sini
-    public travelDate!: string;
-    public rating?: string;
     }
 
     Travel.init({
@@ -38,10 +36,6 @@
         type: DataTypes.DATEONLY,
         allowNull: false // atau true, tergantung apakah wajib diisi
     },
-    rating: {
-        type: DataTypes.STRING,
-        allowNull: true // tanpa validasi, pengguna bisa isi bebas
-        },
     imageUrl: {
         type: DataTypes.STRING,
         allowNull: true // jika ada gambar, bisa ditambahkan di sini
