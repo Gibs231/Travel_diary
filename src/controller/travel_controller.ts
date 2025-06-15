@@ -65,8 +65,8 @@ store: async (req: Request, res: Response) => {
       imageUrl: imageUrl,
     })
 
-    return res.status(201).json({
-      status: 201,
+    return res.status(200).json({
+      status: 200,
         message: "Travel created successfully.",
         travel: todo
     })
